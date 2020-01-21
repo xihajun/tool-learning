@@ -23,11 +23,15 @@ So before using this software, you will need to generate the genome indices. If 
 ```
 # Go to your workplace
 cd yourworkplace
+
 # create a genome indices folder
 mkdir genome
+
 # download Human dna lib (I think)
 wget ftp://ftp.ensembl.org/pub/release-79/fasta/homo_sapiens/dna/Homo_sapiens.GRCh38.dna.primary_assembly.fa.gz
 gunzip Homo_sapiens.GRCh38.dna.primary_assembly.fa.gz
+
+# generate genome indices
 STAR --runThreadN 50 --runMode genomeGenerate --genomeDir ./genome --genomeFastaFiles ./Homo_sapiens.GRCh38.dna.primary_assembly.fa 
 ```
 
