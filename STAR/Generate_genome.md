@@ -17,7 +17,8 @@ If you want to download a lot of files, maybe this documentation (%TODO: upload 
 The reason to do FASTQC is to see the quality of the dataset (I think, correct me if I am wrong as I am new in this stage).
 
 # THE "STAT" PART *what you really want*
-So before using this software, you will need to generate the genome indices. If you don't know how, don't worry, I don't know either. I think there is a command might be useful to you.
+## Genome indices
+So before using this software, you will need to generate the genome indices. If you don't know how, don't worry, I don't know either. I think these commands below might be useful.
 
 ```
 # Go to your workplace
@@ -29,12 +30,16 @@ wget ftp://ftp.ensembl.org/pub/release-79/fasta/homo_sapiens/dna/Homo_sapiens.GR
 gunzip Homo_sapiens.GRCh38.dna.primary_assembly.fa.gz
 STAR --runThreadN 50 --runMode genomeGenerate --genomeDir ./genome --genomeFastaFiles ./Homo_sapiens.GRCh38.dna.primary_assembly.fa 
 ```
+
 *This might take a while which depends how many cores you have.*
 
-
-Here is the bash command
+In these commands, we installed kind of gene library (`Homo_sapiens.GRCh38.dna.primary_assembly.fa.gz`) I think to get indices and use STAR to achieve that.
+## use GTF file to do something cool
 
 After that you can try to see what will happen by implementing this
 ```
 STAR --runThreadN 50 --genomeDir /mnt/Tank/junfan/project/STAR/genome --sjdbGTFfile /mnt/Tank/junfan/project/STAR/Homo_sapiens.GRCh38.79.gtf --sjdbOverhang 100 --readFilesIn SRR7191196_1.fastq SRR7191196_2.fastq 
 ```
+Questions:
+- [ ] It seems that the readFiles should be two files, so are those input files corresponding to _1 and _2 fastq files we got?
+
