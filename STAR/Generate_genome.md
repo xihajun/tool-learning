@@ -16,7 +16,8 @@ If you want to download a lot of files, maybe this documentation (%TODO: upload 
 ## FASTQC (maybe will be mention in the notebook as well)
 The reason to do FASTQC is to see the quality of the dataset (I think, correct me if I am wrong as I am new in this stage).
 
-# THE "STAT" PART *what you really want*
+# THE "STAT" PART 
+*what you really want*
 ## Genome indices
 So before using this software, you will need to generate the genome indices. If you don't know how, don't worry, I don't know either. I think these commands below might be useful.
 
