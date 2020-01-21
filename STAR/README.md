@@ -2,6 +2,5 @@
 As a beginner in biological world, I am trying to figure out how to use star in 21 Jan.
 
 ## Introduction
-In my understanding, STAR is a software to map the rna-seq reads into a bigger genome. In order to do this, we will require install the software and some requirements.
+In my understanding, STAR is a software to map the rna-seq reads into a bigger genome. In order to do this, we will require install the software and some requirements. \[More info can be found [Readmore](./nihms722197.pdf)\]
 
-[Readmore](./nihms722197.pdf)
