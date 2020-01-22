@@ -38,8 +38,8 @@ STAR --runThreadN 50 --runMode genomeGenerate --genomeDir ./genome --genomeFasta
 
 *This might take a while which depends how many cores you have.*
 
-In these commands, we installed kind of gene library (`Homo_sapiens.GRCh38.dna.primary_assembly.fa.gz`) I think to get indices and use STAR to achieve that.
-## use GTF file to do something cool
+In these commands, we installed kind of gene library (`Homo_sapiens.GRCh38.dna.primary_assembly.fa.gz`) I think it is a way to get indices and it can be done by using STAR.
+## Use GTF file to do something "cool"
 
 After that you can try to see what will happen by implementing this
 ```
