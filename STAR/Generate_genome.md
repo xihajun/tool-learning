@@ -33,7 +33,7 @@ wget ftp://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_33/GRCh38.p
 gunzip GRCh38.primary_assembly.genome.fa.gz
 
 # generate genome indices
-STAR --runThreadN 50 --runMode genomeGenerate --genomeDir ./genome --genomeFastaFiles ./GRCh38.primary_assembly.genome.fa.gz
+STAR --runThreadN 50 --runMode genomeGenerate --genomeDir ./genome --genomeFastaFiles ./GRCh38.primary_assembly.genome.fa
 ```
 
 *This might take a while which depends how many cores you have.*
