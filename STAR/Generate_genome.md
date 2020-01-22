@@ -48,8 +48,13 @@ Sorry, I used a wrong version. The updated one can be found from [GENcode](https
 
 After that you can try to see what will happen by implementing this
 ```
-STAR --runThreadN 50 --genomeDir /mnt/Tank/junfan/project/STAR/genome --sjdbGTFfile /mnt/Tank/junfan/project/STAR/Homo_sapiens.GRCh38.79.gtf --sjdbOverhang 100 --readFilesIn SRR7191196_1.fastq SRR7191196_2.fastq 
+STAR --runThreadN 80 --genomeDir ./genome --readFilesIn ./data/SRR7191196_1.fastq ./data/SRR7191196_2.fastq --outFileNamePrefix ./test_sample --outSAMtype BAM SortedByCoordinate --sjdbGTFfile gencode.v33.primary_assembly.annotation.gtf --sjdbOverhang 100 --twopassMode Basic --outWigType bedGraph --outWigStrand Stranded
+
+#--readFilesCommand zcat if input file is fastq.gz
 ```
+
+~~`STAR --runThreadN 50 --genomeDir /mnt/Tank/junfan/project/STAR/genome --sjdbGTFfile /mnt/Tank/junfan/project/STAR/Homo_sapiens.GRCh38.79.gtf --sjdbOverhang 100 --readFilesIn SRR7191196_1.fastq SRR7191196_2.fastq 
+`~~
 Questions:
 - [ ] It seems that the readFiles should be two files, so are those input files corresponding to _1 and _2 fastq files we got?
 
