@@ -29,16 +29,18 @@ cd yourworkplace
 mkdir genome
 
 # download Human dna lib (I think)
-wget ftp://ftp.ensembl.org/pub/release-79/fasta/homo_sapiens/dna/Homo_sapiens.GRCh38.dna.primary_assembly.fa.gz
-gunzip Homo_sapiens.GRCh38.dna.primary_assembly.fa.gz
+wget ftp://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_33/GRCh38.primary_assembly.genome.fa.gz
+gunzip GRCh38.primary_assembly.genome.fa.gz
 
 # generate genome indices
-STAR --runThreadN 50 --runMode genomeGenerate --genomeDir ./genome --genomeFastaFiles ./Homo_sapiens.GRCh38.dna.primary_assembly.fa 
+STAR --runThreadN 50 --runMode genomeGenerate --genomeDir ./genome --genomeFastaFiles ./GRCh38.primary_assembly.genome.fa.gz
 ```
 
 *This might take a while which depends how many cores you have.*
 
-In these commands, we installed kind of gene library (`Homo_sapiens.GRCh38.dna.primary_assembly.fa.gz`) I think it is a way to get indices and it can be done by using STAR.
+~~In these commands, we installed kind of gene library (`Homo_sapiens.GRCh38.dna.primary_assembly.fa.gz`) I think it is a way to get indices and it can be done by using STAR.~~
+Sorry, I used a wrong version. The updated one can be found from [GENcode](https://www.gencodegenes.org/human/).
+
 ## Use GTF file to do something "cool"
 
 After that you can try to see what will happen by implementing this
