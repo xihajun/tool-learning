@@ -40,7 +40,7 @@ STAR --runThreadN 50 --runMode genomeGenerate --genomeDir ./genome --genomeFasta
 
 ~~In these commands, we installed kind of gene library (`Homo_sapiens.GRCh38.dna.primary_assembly.fa.gz`) I think it is a way to get indices and it can be done by using STAR.~~
 
-Sorry, I used a wrong version. The updated one can be found from [GENcode](https://www.gencodegenes.org/human/).
+Sorry, I used a wrong version. The updated one can be found from [GENcode](https://www.gencodegenes.org/human/) (the last file in Fasta files).
 
 ## Use GTF file to do something "cool"
 
