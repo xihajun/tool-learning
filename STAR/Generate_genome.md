@@ -16,6 +16,12 @@ If you want to download a lot of files, maybe this documentation (%TODO: upload 
 ## FASTQC (maybe will be mention in the notebook as well)
 The reason to do FASTQC is to see the quality of the dataset (I think, correct me if I am wrong as I am new in this stage).
 
+## Cutadapter
+In order to map to the genome, we have to cut the reads with low quality etc.
+
+There are a lot of tools can do this, but here we use cutadapter which is written in python.
+
+
 # THE "STAT" PART 
 *what you really want*
 ## Genome indices
@@ -48,7 +54,7 @@ Sorry, I used a wrong version. The updated one can be found from [GENcode](https
 
 After that you can try to see what will happen by implementing this
 ```
-STAR --runThreadN 80 --genomeDir ./genome --readFilesIn ./data/SRR7191196_1.fastq ./data/SRR7191196_2.fastq --outFileNamePrefix ./test_sample --outSAMtype BAM SortedByCoordinate --sjdbGTFfile gencode.v33.primary_assembly.annotation.gtf --sjdbOverhang 100 --twopassMode Basic --outWigType bedGraph --outWigStrand Stranded
+STAR --runThreadN 80 --genomeDir ./genome --readFilesIn ./data/SRR7191196_1.fastq ./data/SRR7191196_2.fastq --outFileNamePrefix ./test_sample/ --outSAMtype BAM SortedByCoordinate --sjdbGTFfile gencode.v33.primary_assembly.annotation.gtf --sjdbOverhang 100 --twopassMode Basic --outWigType bedGraph --outWigStrand Stranded
 
 #--readFilesCommand zcat if input file is fastq.gz
 ```
