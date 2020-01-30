@@ -8,9 +8,9 @@ Because I am too lazy, so I think I will need two things in order to this mappin
 - [ ] Download the data (%TODO: sra usage). 
 - [ ] Generate the genome indices to do the mapping (I am not 100% sure that I am fully understand this one)
 
-%TODO *As for the second thing, it is easy to follow the tutorial [here](./nihms722197.pdf). If you are too lazy to read those document like me, you can look at [this document](./Generate_genome.md) which will be created soon. And please remember to use all the cores if you have a lot.
+__%TODO__ *As for the second thing, it is easy to follow the tutorial [here](./nihms722197.pdf). If you are too lazy to read those document like me, you can look at [this document](./Generate_genome.md) which will be created soon. And please remember to use all the cores if you have a lot.*
 
-(21 Jan 15:26: don't know what will happen just waiting for data generating process)
+(21 Jan 15:26: don't know what will happen just waiting for data generating process)\n
 (22 Jan, just found a link from summer school which is better than mine lol)
 
 
