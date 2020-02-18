@@ -12,6 +12,5 @@ __%TODO__ *As for the second thing, it is easy to follow the tutorial [here](./n
 
 (21 Jan 15:26: don't know what will happen just waiting for data generating process)\n
 (22 Jan, just found a link from summer school which is better than mine lol)
-
-
+(18 Feb, GenCode: to download GTF files)
 
